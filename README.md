@@ -15,7 +15,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-  <img src="https://img.shields.io/badge/python-3.7+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg" alt="Platform">
   <img src="https://img.shields.io/badge/dependencies-ZERO-brightgreen.svg" alt="Zero Dependencies">
 </p>
@@ -77,10 +77,29 @@ A beautiful web interface to:
 
 ## 🚄 Quick Start
 
-**Three commands. Zero dependencies. Zero configuration.**
+### Option 1: Install via pipx (Recommended)
+
+**One command. Available system-wide. Auto-updates.**
 
 ```bash
-git clone https://github.com/gagarinyury/claude-config-editor.git
+pipx install git+https://github.com/SijanC147/claude-config-editor.git
+```
+
+Then run from anywhere:
+```bash
+claude-config-editor
+```
+
+### Option 2: Install via pip
+
+```bash
+pip install git+https://github.com/SijanC147/claude-config-editor.git
+```
+
+### Option 3: Run directly (no install)
+
+```bash
+git clone https://github.com/SijanC147/claude-config-editor.git
 cd claude-config-editor
 python3 server.py
 ```
@@ -206,7 +225,8 @@ Remove: Find server card → Click "Delete" → Save
 | Claude Desktop (Linux) | `~/.config/Claude/claude_desktop_config.json` | ✅ |
 
 ### Requirements
-- **Python 3.7+** (no pip install, no virtualenv, just works)
+- **Python 3.8+** (just works, zero dependencies)
+- **pipx** (recommended) or **pip** for installation
 - **Claude Code** or **Claude Desktop** (obviously)
 
 ### How It Actually Works
@@ -255,7 +275,7 @@ A: Yes! Python is cross-platform. Works on macOS, Linux, Windows.
 **Want to add a feature?** Fork + PR.
 
 ```bash
-git clone https://github.com/gagarinyury/claude-config-editor.git
+git clone https://github.com/SijanC147/claude-config-editor.git
 cd claude-config-editor
 # Make your changes
 git commit -am "Add awesome feature"
@@ -307,8 +327,8 @@ It helps others discover the tool and validates my late-night coding session.
 If you found this useful, **star the repo**! It helps others discover it.
 
 <p align="center">
-  <a href="https://star-history.com/#gagarinyury/claude-config-editor&Date">
-    <img src="https://api.star-history.com/svg?repos=gagarinyury/claude-config-editor&type=Date" alt="Star History Chart">
+  <a href="https://star-history.com/#SijanC147/claude-config-editor&Date">
+    <img src="https://api.star-history.com/svg?repos=SijanC147/claude-config-editor&type=Date" alt="Star History Chart">
   </a>
 </p>
 
@@ -316,9 +336,9 @@ If you found this useful, **star the repo**! It helps others discover it.
 
 ## 💬 Support
 
-- 🐛 **Bugs:** [Open an issue](https://github.com/gagarinyury/claude-config-editor/issues)
-- 💡 **Ideas:** [Open an issue](https://github.com/gagarinyury/claude-config-editor/issues)
-- 💬 **Questions:** [Discussions](https://github.com/gagarinyury/claude-config-editor/discussions)
+- 🐛 **Bugs:** [Open an issue](https://github.com/SijanC147/claude-config-editor/issues)
+- 💡 **Ideas:** [Open an issue](https://github.com/SijanC147/claude-config-editor/issues)
+- 💬 **Questions:** [Discussions](https://github.com/SijanC147/claude-config-editor/discussions)
 - ⭐ **Show love:** Star the repo!
 
 ---
@@ -329,7 +349,7 @@ If you found this useful, **star the repo**! It helps others discover it.
 </p>
 
 <p align="center">
-  <strong>If this saved you time, <a href="https://github.com/gagarinyury/claude-config-editor">⭐ star the repo</a>!</strong><br>
+  <strong>If this saved you time, <a href="https://github.com/SijanC147/claude-config-editor">⭐ star the repo</a>!</strong><br>
   <sub>It takes 2 seconds and makes my day.</sub>
 </p>
 
