@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "claude-config-editor"
+version = "1.0.0"
+description = "Web-based GUI for managing and cleaning up Claude Code and Claude Desktop configuration files"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "SijanC147" }
+]
+keywords = [
+    "claude",
+    "claude-code",
+    "claude-desktop",
+    "config",
+    "editor",
+    "gui",
+    "cleanup",
+    "mcp"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/SijanC147/claude-config-editor"
+Repository = "https://github.com/SijanC147/claude-config-editor"
+Issues = "https://github.com/SijanC147/claude-config-editor/issues"
+
+[project.scripts]
+claude-config-editor = "claude_config_editor:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["claude_config_editor"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/claude_config_editor",
+    "/README.md",
+    "/LICENSE",
+]
